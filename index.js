@@ -29,9 +29,9 @@ const pictures = [
   { link: "https://github.com/leahzeisner/django-meetups-app", name: "meetups-pic-1.png" },
   { link: "https://github.com/leahzeisner/django-meetups-app", name: "meetups-pic-2.png" },
   { link: "http://djangoblog-env.eba-jejnkqaj.us-east-2.elasticbeanstalk.com/", name: "blog-app-pic-1.png" },
-  { link: "https://github.com/leahzeisner/quote-generator", name: "quote-generator-pic.png" },
-  { link: "https://github.com/leahzeisner/custom-countdown", name: "countdown-pic-1.png" },
-  { link: "https://github.com/leahzeisner/custom-countdown", name: "countdown-pic-2.png" },
+  { link: "https://leahzeisner.github.io/quote-generator/quote-generator/", name: "quote-generator-pic.png" },
+  { link: "https://leahzeisner.github.io/custom-countdown/", name: "countdown-pic-1.png" },
+  { link: "https://leahzeisner.github.io/custom-countdown/", name: "countdown-pic-2.png" },
   { link: "https://leahzeisner.github.io/Trillo-Project/", name: "trillo-pic.png"}
 ]
 
