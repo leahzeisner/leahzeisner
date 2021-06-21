@@ -1,0 +1,74 @@
+.about {
+    width: 85%;
+    min-height: 100vh;
+    margin-bottom: 8rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+
+    @media only screen and (max-width: $bp-large) {
+        text-align: center;
+    }
+
+
+    &__title {
+        font-size: 5rem;
+        font-family: monospace;
+        font-weight: 300; 
+        margin-bottom: 3rem;
+
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 5.5rem;
+            margin-bottom: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__section {
+        width: 100%;
+        margin-bottom: 20rem;
+
+        &--paragraph {
+            font-size: 3rem;
+            font-family: garamond;
+            text-align: justify;
+            width: 50%;
+
+
+            @media only screen and (max-width: $bp-large) {
+                width: 90%;
+                margin: 0 5%;
+                font-size: 3.5rem;
+                line-height: 1.3;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2.5rem;
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+
+        &--paragraph-2 {
+            float: right;
+
+            @media only screen and (max-width: $bp-large) {
+                float: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.work {
+    width: 70%;
+    min-height: 100vh;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: garamond;
+    text-align: center;
+
+
+    @media only screen and (max-width: $bp-largest) {
+        width: 90%;
+        margin: 0 5% 8rem 5%;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 90%;
+        min-height: auto;
+        height: 65vh;
+    }
+
+
+    &__title {
+        font-size: 4.5rem;
+
+        
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3.75rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        font-weight: 200;
+
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.5rem;
+            order: 3;
+            margin-top: 6rem;
+        }
+
+
+        a {
+            color: $color-purple;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all .2s;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: underline;
+        }
+    }
+
+    &__slideshow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &--img {
+            width: 85%; 
+            border: 0.5px solid rgb(145, 142, 142);
+            margin: 6rem 7.5%;
+            transition: all .2s;
+
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 80%;
+                margin: 6rem 10% 0 10%;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 90%;
+                margin: 6rem 5% 0 5%;
+            }
+
+            &:hover,
+            &:active {
+                filter: brightness(110%);
+                box-shadow: 0rem 0rem 5rem 1rem rgba(212, 116, 212, 0.747);
+            }
+        }
+    }
+}

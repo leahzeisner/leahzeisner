@@ -1,0 +1,103 @@
+.contact {
+    width: 70%;
+    min-height: 40vh;
+    margin-bottom: 8rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: garamond;
+    text-align: center;
+
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+
+    &__title {
+        font-size: 4.5rem;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 200;
+
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.5rem;
+        }
+
+
+        &--link {
+            margin: 1rem 3.5rem;
+            text-decoration: none;
+            color: $color-purple;
+            transition: all .2s;
+
+
+            &:hover,
+            &:active {
+                transform: translateY(-.5rem) scale(1.2);
+            }
+        }
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 22rem;
+
+
+        &--email {
+            transform: scale(2);
+            margin-top: 1.5rem;
+            margin-right: 12rem;
+            transition: all .2s;
+
+
+            @media only screen and (max-width: $bp-small) {
+                transform: scale(1.8);
+                margin-right: 9rem;
+            }
+
+
+            &:hover,
+            &:active {
+                transform: translateY(-.5rem) scale(2.6);
+            }
+        }
+
+        &--linkedin {
+            width: 5.5rem;
+            margin-top: .5rem;
+            margin-left: -1rem;
+            transition: all .2s;
+
+
+            @media only screen and (max-width: $bp-small) {
+                width: 5rem;
+            }
+
+            &:hover,
+            &:active {
+                transform: translateY(-.5rem)  scale(1.1);
+            }
+        }
+    }
+}

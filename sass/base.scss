@@ -1,0 +1,51 @@
+// COLOR VARIABLES
+
+$color-purple: #551A8B;
+$color-purple-dark: #340a5c;
+$color-pink: rgba(233, 180, 233, 0.596);
+$color-pink-light: rgba(233, 180, 233, 0.164);
+$color-yellow: rgb(248, 248, 179);
+
+// BREAKPOINT VARIABLES
+
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px
+$bp-small: 37.5em;   // 600px
+
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    background: linear-gradient(
+        to bottom,
+        $color-yellow 0%,
+        $color-pink 17%,
+        $color-pink-light 25%
+    );
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

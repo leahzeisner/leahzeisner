@@ -1,0 +1,110 @@
+.welcome {
+    background-color: transparent;
+    width: 80%;
+    min-height: 100vh;
+    margin-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+
+    @media only screen and (max-width: $bp-large) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+
+
+    &__picture {
+        margin: 0 2rem;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 1rem 0 5rem 0;
+        }
+        
+
+        &--img {
+            border-radius: 100%;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 20px;
+            opacity: .85;
+            width: 35rem;
+
+
+            @media only screen and (max-width: $bp-small) {
+                width: 20rem;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 2rem;
+
+
+        &--title {
+            font-family: cursive;
+            font-weight: 300;
+            font-size: 7.5rem;
+            letter-spacing: 2px;
+            padding-right: 1.5rem;
+
+
+            @media only screen and (max-width: $bp-large) {
+                font-size: 7rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 5rem;
+            }
+        }
+
+        &--subtitle {
+            font-family: 'Courier New', monospace;
+            font-size: 5rem;
+            font-weight: 100;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+
+
+            @media only screen and (max-width: $bp-large) {
+                font-size: 4.5rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color-purple;
+            transition: all .2s;
+
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.5rem;
+            }
+        }
+
+        a:hover,
+        a:active {
+            transform: translateY(-.5rem) scale(1.1);
+        }
+    }
+}
