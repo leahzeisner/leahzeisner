@@ -70,6 +70,7 @@ function createImages() {
   pictures.forEach((picture) => {
     const link = document.createElement('a')
     link.href = picture.link
+    link.target = '_blank'
 
     const image = document.createElement('img')
     image.classList.add('work__slideshow--img')

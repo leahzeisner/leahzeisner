@@ -87,8 +87,8 @@
 
             &:hover,
             &:active {
+                transform: scale(1.05);
                 filter: brightness(110%);
-                box-shadow: 0rem 0rem 5rem 1rem rgba(212, 116, 212, 0.747);
             }
         }
     }
