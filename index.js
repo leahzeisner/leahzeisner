@@ -108,7 +108,6 @@ function slideshow() {
     setTimeout(slideshow, 3000);
 }
 slideshow();
-console.log(slidesElements.length)
 
 
 
